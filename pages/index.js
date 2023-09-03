@@ -24,21 +24,39 @@ export default function Home() {
   } = useHome();
   return (
     <div className={styles.container}>
-      <Head>
-        <title>FastOCR</title>
-        <link rel="icon" href="/favicon.ico" />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-LKK8XKV9XD" />
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-  
-            gtag('config', 'G-LKK8XKV9XD');
-          `}
-        </Script>
-      </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-LKK8XKV9XD" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-LKK8XKV9XD');
+        `}
+      </Script>
+      <Head>
+        <title>FastOCR - Convert Unlimited Images To Text For Free</title>
+        <meta 
+        name="description" 
+        content="Effortlessly convert images to editable text with our online tool." 
+        key="desc"/>
+        <meta 
+        property="og:title" 
+        content="FastOCR - Convert Unlimited Images To Text For Free" />
+        <meta
+        property="og:description"
+        content="Effortlessly convert images to editable text with our online tool."
+        />
+        <meta
+          property="og:image"
+          content="https://fastocr.net/favicon-32x32.png"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </Head>
       <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://fastocr.net">FastOCR.net!</a>
