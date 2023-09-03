@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Script from 'next/script';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { FileUploader } from "react-drag-drop-files";
@@ -123,6 +124,16 @@ export default function Home() {
       <footer>
         <p>Disclaimer: We do not guarantee 100% accuracy in the extracted text.</p>
       </footer>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-LKK8XKV9XD" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-LKK8XKV9XD');
+        `}
+      </Script>
 
       <style jsx>{`
         main {
