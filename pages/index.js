@@ -149,10 +149,6 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <p>Disclaimer: We do not guarantee 100% accuracy in the extracted text.</p>
-      </footer>
-
       <style jsx>{`
         main {
           padding: 5rem 0;
